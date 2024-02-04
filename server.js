@@ -16,6 +16,6 @@ http.createServer((req, res) => {
 
     res.write(message);
     res.end();
-}).listen(8888);
+}).listen(process.env.PORT || 8888);
 
 console.log("server is running");
